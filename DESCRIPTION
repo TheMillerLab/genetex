@@ -3,7 +3,8 @@ Type: Package
 Title: GENETEX is a Natural Language Processing pacakge for patient registries
 Version: 0.1.0
 Authors@R:
-    person("David", "Miller", email = "dmiller4@mgh.harvard.edu", role = c("aut", "cre"))
+    person("David", "Miller", email = "dmiller4@mgh.harvard.edu", role = c("aut", "cre")),
+    person("Sophia", "Shalhout", role = c("aut"))
 Maintainer: David Michael Miller <dmiller4@mgh.harvard.edu>
 Description: GENETEX is a Natural Language Processing pacakge for patient registries. It's primary function 
     is to provide a series of functions to augment data abstraction of genomic reports encountered in 
