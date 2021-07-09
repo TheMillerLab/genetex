@@ -1,12 +1,3 @@
----
-title: "GENETEX: README"
-author: "David M. Miller MD PhD, Sophia Z. Shalhout PhD"
-date: "07/09/2021"
-output: 
-    html_document: default
-    github_document: default
----
-
 <img src='man/figures/logo.png' align="right" height="139" />
 
 <!-- badges: start -->
