@@ -31,10 +31,13 @@ library(kableExtra)
 <!-- badges: end -->
 
 ## Overview  
-The goal of <font color = 'orange' ><b>GENETEX</b></font> (pronounced "genetics") is to facilitate data abstraction from genomic reports for clinical research. With that goal in mind, the package centralizes around a core function called `genetex_to_redcap()` which applies natural language and text mining tools to abstract key genomic information from a variety of clinical reports found in routine clinical practice and prepares those data for import into a REDCap<sup>&#174;</sup> database.  
+The goal of <font color = 'orange' ><b>GENETEX</b></font> (pronounced "genetics") is to facilitate data abstraction from genomic reports for clinical research. With that goal in mind, the package centralizes around a core function called `genetex_to_redcap()` which applies natural language and text mining tools to abstract key genomic information from a variety of clinical reports found in routine clinical practice and prepares those data for import into a REDCap<sup>&#174;</sup> database.   
+
+We have also created a front-end Shiny application that uses the core functions of <font color = 'orange' ><b>GENETEX</b></font> on the server side of the app. The Shiny app of <font color = 'orange' ><b>GENETEX</b></font> allows for data to be entered in the browser to facilitate data capture. The package does not require the use of the Shiny app, but the app enhances the usability of the package.
 
 
-<font color = 'orange' ><b>GENETEX</b></font> provides a set of verbs that help you import, text mine and process genomic data for clinical research:
+<font color = 'orange' ><b>GENETEX</b></font> provides a set of verbs that help you import, text mine and process genomic data for clinical research:  
+<br>
 ```{r Table 1 - GENETEX Verbs, echo=FALSE, message=FALSE, warning=FALSE}
 verbs <- dplyr::tribble(
   ~verbs, ~`function`,
@@ -83,20 +86,25 @@ library(genetex)
 ```
 
 ### Input  
-Ideally the input data is directly copied to your computer's clipboard from the clinical report by "selecting all" and then "copy". That is the default. We wanted to make this function as user-friendly to busy clinicians and clinical research staff. Since most staff will have the report open in a window in their Electronic Health Record or an open PDF form a commercial vendor, we designed <font color = 'orange' ><b>GENETEX</b></font> to take advantage of the `readr::clipboard()` function. If you don't use the clipboard function, you can use a data frame of the text file. That data frame can be engineered from a txt or csv file. Each line of the data frame should mirror a line in the genomics report.
+#### Overview  
+We wanted to make the process of securing data into the package user-friendly to busy clinicians and clinical research staff. Since most staff will have their target/desired report open in a window in their Electronic Health Record or an open PDF form a commercial vendor, we designed <font color = 'orange' ><b>GENETEX</b></font> to take advantage of the `readr::clipboard()` function. Thus, the input data canb e directly copied to your computer's clipboard from the clinical report by selecting the relevant text (or by "selecting all" e.g. "control + A" or "Command + A) and then "copy" ("control + A" or "Command + A"). That is the default.  
 
-In addition, to ease abstraction of these data, we created a browser-based user interface that incorporates text data captured on a clipboard as input in a Shiny application. This Shiny app is separate, but complementary to the GENETEX package. Text is copied to a computer's clipboard and pasted into the text area input in the Shiny application
+#### R Studio-Based Data Acquisition
+One does not need to use the Shiny App to secure data into R. You can execute the "pasting" of the data with the `readr::clipboard()` function right in R Studio. If you don't use the clipboard function, you can use a data frame of the text file. That data frame can be engineered from a txt or csv file. Each line of the data frame should mirror a line in the genomics report.  
+
+#### Shiny App-Based Data Acquisition  
+In addition, to ease abstraction of these data, we created a browser-based user interface that incorporates text data captured on a clipboard as input in a Shiny application. This Shiny app is separate, but complementary to the GENETEX package. Text is copied to a computer's clipboard and pasted into the text area input in the Shiny application. 
 
 #### Supported Platforms  
 At this time, reports from the following platforms are able to be processed by <font color = 'orange' ><b>genetex</b></font>:  
 
-* [Gaurdant Health](https://guardanthealth.com)  
-* [FoundationOne](https://www.foundationmedicine.co.uk)  
+* [Gaurdant360&reg;](https://guardanthealth.com)  
+* [FoundationOne&trade;](https://www.foundationmedicine.co.uk)  
 * [MGH SNaPshot](https://www.massgeneral.org/pathology/services/center-for-integrated-diagnostics-default)  
 * [BWH Oncopanel](https://www.brighamandwomens.org/pathology/center-for-advanced-molecular-diagnostics/molecular-diagnostics-laboratory)  
 
 ### Example of text mining various clinical genomic reports  
-***<u>Of note, these clinical data are completely synthetic and do not represent any actual patient-related. Any relation to an actual patients is purely coincidental</u>.***  
+* Of note, these clinical data are completely synthetic and do not represent any actual patient-related. Any relation to an actual patients is purely coincidental.
 
 #### Guardant Health Report
 ```{r, message = FALSE, warning=FALSE}
@@ -171,7 +179,7 @@ genetex::genes_regex()
 
 If you encounter a clear bug, please file an issue with a minimal reproducible example on [GitHub](https://github.com/TheMillerLab/genetex/issues).
 
-## Disclaimer and Acknoledgements
+## Disclaimer and Acknowledgements
 We would like to acknowledge Ravikumar Komandur, PhD, Project Director at Project Data Sphere for review and critique of the manuscript; Guardant Health and Foundation Medicine for making sample reports available for the development of this package. <font color = 'orange' ><b>GENETEX</b></font> is for research purposes only. No clinical decisions should be made with the information obtained from its output. This article reflects the views and work (including development and use of <font color = 'orange' ><b>GENETEX</b></font>) of the authors and should not be construed to represent the work, policies, of any of the vendors whose reports were used to develop <font color = 'orange' ><b>GENETEX</b></font> and whose reports may be provided as part of the package. This package reflects the views of the authors and should not be construed to represent the views or policies of any of the vendors that have supplied sample reports to the package.
 
 # Bibliography
