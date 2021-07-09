@@ -20,6 +20,19 @@ We have also created a front-end Shiny application that uses the core functions 
 
 <font color = 'orange' ><b>GENETEX</b></font> provides a set of verbs that help you import, text mine and process genomic data for clinical research:  
 
+  | Verbs | Function |
+  | :---        |    :---   |
+  |genetex_to_redcap()|integrates key verbs to provide NLP tools to abstract data from a variety of genomic reports and import them to REDCap|
+  |gene.variants()|integrates various platform-specific NLP functions to text mine gene names and nucleotide variants from genomic reports and transforms them to structured data for import into REDCap|
+  |cnv()| integrates various platform-specific NLP functions to text mine gene names and copy number variants data from a variety of genomic reports and transforms them to structured data for import into REDCap|
+  |mmr()|text mines mismatch repair status from genomic reports and transforms it to structured data for import into REDCap|
+  |mutational.signatures()|text mines mutational signatures data from a variety of genomic reports and transforms it to structured data for import into REDCap|
+  |tmb()|text mines tumor mutation burden (TMB) data from a variety of genomic reports and transforms it to structured data for import into REDCap|
+  |platform()|applies regular expressions to assign a numerical value for the various platforms used for genomic reports that aligns with the `genomics_platform` field in the REDCap Genomics Instrument|
+  |genes_regex()|produces a regular expression of over 900 HGNC gene names|
+  |genes_boundary_regex()|produces a regular expression of over 900 HGNC gene names as a unique string with word boundaries|
+  |genomics.tissue.type()|applies regular expressions to assign a numerical value for the various platforms used for genomic reports that aligns with the  `genomics_platform` field in the REDCap Genomics Instrument|
+
 ## Dependencies
 ### Software Dependencies
 <font color = 'orange' ><b>GENETEX</b></font> is written in R (version 4.0.0), organized using roxygen2, and utilizes the following packages dplyr, tidyr, readr, stringr, purrr, REDCapR, magrittr, splitstackshape and Shiny.
