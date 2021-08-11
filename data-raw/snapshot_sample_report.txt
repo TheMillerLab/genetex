@@ -1,0 +1,212 @@
+Narrative
+
+Generic Hospital 
+City, State 11111 Tel (123) 456-7890 
+
+Molecular Pathology Report 
+Solid Genomics Assay 
+
+
+Accession #: M12-12345 
+Patient Name: Doe, Jane 
+DOB: 8/02/1932 (Age: 88) 
+Sex: F 
+MRN: 123456789 
+Institution: Generic Hospital 
+Location: PATHOLOGY 
+Date of Collection: 1/01/2021 
+Date of Accession: 1/01/2021 
+Reported: 01/21/2021 17:01 
+Results To: 
+Doctor Doctor MD
+
+
+CLINICAL HISTORY: 
+Skin Merkel Cell Carcinoma 
+
+SPECIMENS RECEIVED: 
+A: Molecular test for Solid Genomics Assay 
+
+GROSS DESCRIPTION: 
+10 unstained slides from Medical Center; the archived specimen was 
+retrieved and reviewed for adequacy 
+
+SLIDE-BLOCK DESCRIPTION: 
+SS-12-3456-789A 
+
+
+
+
+
+TEST - GENOMICS-NGS-V2 Assay 
+
+INDICATION FOR TEST: ÊSkin Merkel Cell Carcinoma 
+
+SPECIMEN(S) TESTED: ÊSS-12-34567 A1 (Hospital Medical Center, City, State, United 
+States) 
+
+
+
+
+RESULTS: 
+
+Single nucleotide variants: 
+ATM ENSP00000278616.4:p.Pro1166Ser (ENST00000278616.4:c.3496C>T)
+PTEN ENSP00000361021.3:p.Gly129Arg (ENST00000371953.3:c.385G>A) 
+MEN1 ENSP00000308975.6:p.Thr506Ile (ENST00000312049.6:c.1517C>T) 
+HNF1A ENSP00000257555.4:p.Ala276Gly (ENST00000257555.6:c.827C>G) 
+ERBB3 ENSP00000267101.3:p.Gln45His (ENST00000267101.3:c.135A>T) 
+FLT3 ENSP00000241453.7:p.Gly846Ser (ENST00000241453.7:c.2536G>A) 
+RB1 ENSP00000267163.4:p.Gln736Ter (ENST00000267163.4:c.2206C>T) 
+NF1 ENSP00000351015.4:p.Pro2401Leu (ENST00000358273.4:c.7202C>T) 
+NF1 ENST00000358273.4:c.2409G>A(p.=) (ENST00000358273.4:c.2409G>A)
+RNF43 ENSP00000385328.2:p.Pro606Ser (ENST00000407977.2:c.1816C>T) 
+TP53 ENSP00000269305.4:p.Pro278Leu (ENST00000269305.4:c.833C>T) 
+TP53 ENSP00000269305.4:p.Leu43Ter (ENST00000269305.4:c.128T>A) 
+CCNE1 splice region variant (ENST00000262643.3:c.706-6C>T) 
+CIC ENSP00000160740.3:p.Pro98Ser (ENST00000160740.3:c.292C>T) 
+MYCN ENSP00000281043.3:p.His431Tyr (ENST00000281043.3:c.1291C>T) 
+APC ENSP00000413133.1:p.Gly2426Glu (ENST00000457016.1:c.7277G>A) 
+EZH2 ENSP00000320147.2:p.Asp635Asn (ENST00000320356.2:c.1903G>A)
+ROS1 ENSP00000357494.3:p.Met2001Ile (ENST00000368508.3:c.6003G>A)  
+NOTCH1 ENSP00000277541.6:p.Trp1487Ter (ENST00000277541.6:c.4461G>A)
+PTPN11 ENSP00000340944.2:p.Pro101Phe (ENST00000351677.2:c.301_302delCCinsTT)
+
+Insertions/deletions: 
+TP53 ENSP00000269305.4:p.Arg196Ter (ENST00000269305.4:c.585_586delCCinsTT)
+CDK4 ENSP00000257904.5:p.Arg24Cys (ENST00000257904.6:c.69_70delCCinsTT)
+
+Copy number variants: 
+KDR gain 
+KIT gain 
+PDGFRA gain 
+
+Genomic signatures: 
+Tumor mutational burden (TMB) absolute count: 46 
+(Reference range for TMB-High on this assay: Absolute count >= 15) 
+
+INTERPRETATION: 
+POSITIVE for variant(s) in CIC, ERBB3, PDGFRA, TP53, MYCN, CCNE1, RNF43, HNF1A, 
+RB1, MEN1, PTEN, EZH2, ROS1, PTPN11, NF1, APC, KIT, NOTCH1, CDK4, FLT3 and KDR. 
+
+TMB-High 
+
+
+
+
+
+
+COMMENT: 
+In our laboratory, Skin cancer, non-Melanoma harbors a median of 15 variants in 
+our panel. This case, with a TMB count of 46, scores in the 98th percentile 
+across all cancer types and in the 99th percentile in the subset of Skin cancer, 
+non-Melanoma. 
+
+TEST INFORMATION: 
+This test utilizes a multiplex polymerase chain reaction (PCR) technology called 
+Anchored Multiplex PCR (AMP [1]) for single nucleotide variant (SNV), 
+insertion/deletion (indel), and copy number detection in genomic DNA using the 
+ArcherDx platform and Illumina NextSeq next generation sequencing (NGS). 
+Briefly, genomic DNA was isolated from a formalin-fixed paraffin embedded tumor 
+specimen (after histological review for tumor enrichment), blood, bone marrow 
+aspirates, or pancreatic cyst fluid. The genomic DNA was enzymatically sheared, 
+end-repaired, adenylated, and ligated with a half-functional adapter. A 
+sequencing library targeting hotspots and full exons was generated using two 
+hemi-nested PCR reactions. Illumina NextSeq 2x150 base paired-end sequencing 
+results were aligned to the hg19 human genome reference using Novoalign [2]. An 
+ensemble variant calling approach, using MuTect1 [3], LoFreq [4], GATK [5, 6, 
+7], and a laboratory developed hotspot caller, was applied for SNV and indel 
+variant detection. A laboratory developed copy number caller utilizing a 
+coverage distribution from a panel of normals was applied for copy gain and loss 
+detection. Variants are reported with Human Genome Variation Society (HGVS) 
+protein and DNA nomenclature, followed by the referenced Ensembl transcript ID. 
+This test has been validated to detect SNV and indel variants at 5% allelic 
+frequency or higher in target regions with sufficient read coverage. 
+
+TMB (tumor mutational burden) is reported as a total absolute count across the 
+covered regions of the assay. The count is determined by quantitating the number 
+of somatic mutations in sequenced genes on this panel. Somatic mutations are 
+defined as all intronic, synonymous and non-synonymous variants present with 
+allele frequencies between 5-95% that are not present in a panel of normal cases 
+after excluding low quality variants and technical artifacts (by base quality 
+metrics), and including variants supported by a minimum number of reads and 
+prioritized variant calling methods. We determined that an absolute TMB count 
+greater than or equal to 15 shows 96.8% concordance with identification of a 
+TMB-high status in orthogonal assays. In high quality/high tumor purity samples, 
+we determined the precision of the absolute TMB count to be 98%. We also provide 
+a summarized "TMB-high" or "TMB-low" interpretation and the tumor type-specific 
+historic rank of the absolute TMB count in each case relative to a reference 
+population assessed with this assay. Disclaimer: TMB estimation based on 
+mutation counting in targeted panels may not reflect the tumor mutational burden 
+determined by other assays (e.g., whole exome sequencing). Direct conversion of 
+the reported absolute TMB count to other assays or standards is not possible. 
+
+The assay shows the following limitations for copy number calling: (1) 
+aneuploidy cannot be distinguished from gene specific copy gains or copy losses, 
+(2) limited sensitivity for borderline/weak copy gains or copy losses, (3) 
+limited sensitivity in specimens with low tumor cellularity, (4) limited 
+performance in poor quality specimens showing suboptimal coverage, and (5) 
+absolute copy number status cannot be determined. 
+
+The SNV and indel gene targets covered by this test are as follows (exons): ABL1 
+(4-7), AKT1 (3,6), ALK (21-23,25), APC (16), ARID1A (1-20), ATM (1-63), ATRX 
+(1-35), AURKA (2,5-8), BRAF (11,15), BRCA1 (2-23), BRCA2 (2-27), CCNB1 
+(2,[3-partial],5,[6-partial],7), CCND2 ([2-partial],3-4,[5-partial]), CCND3 
+(2-5-partial), CCNE1 (3-8,10,12), CDH1 (1-16), CDK4 (2-7), CDK6 (6), CDKN2A 
+(1-3), CIC (1-20), CSF1R (7,22), CTNNB1 (3), DAXX (1-8), DDR2 (12-18), DDX3X 
+(1-17), EGFR (3,7,15,18-21), ERBB2 (8,10,19-21,24), ERBB3 (2-3,7-8), ERBB4 
+(3-4,6-9,15,23), ESR1 (8), EZH2 (16), FBXW7 (1-11), FGFR1 (4,7-8,13,15,17), 
+FGFR2 (7,9,12,14), FGFR3 (7-9,14-16,18), FLT3 (11,14,16,20), FOXL2 (1), GNA11 
+(5), GNAQ (4-5), GNAS (6-9), H3F3A (2), HNF1A (3-4), HRAS (2-3), IDH1 (3-4), 
+IDH2 (4), JAK2 (11,13-14,16,19), JAK3 (4,13,16), KDR (6-7,11,19,21,26-27,30), 
+KEAP1 (2-6), KIT (2,8-11,13-15,17-18), KRAS (2-5), MAP2K1 (2,3,6-7), MAP3K1 
+(1-20), MDM2 (2-4,6,8,10), MDM4 ([4-partial],5-6,[7,9-11-partial]), MEN1 (2-10), 
+MET (2,11,14,16,19,21), MITF (1-partial), MLH1 (12), MPL (10), MSH6 (1-10), MSI, 
+MYC (1-3), MYCN (3), NF1 (1-58), NF2 (1-15), NKX2-1 (1-partial), NOTCH1 
+(25-27,34), NPM1 (11), NRAS (2-5), PDGFRA (12,14-15,18,23), PIK3CA 
+(2,5,7-8,10,14,19,21), PIK3R1 (1-10), POLE (9-14), PTCH1 (1-23), PTEN (1-9), 
+PTPN11 (3,13), RB1 (1-27), RET (10-11,13-16), RHOA (2-3), RNF43 (2-10), ROS1 
+(36-38), SDHB (1-8), SMAD2 (7), SMAD4 (2-12), SMARCA4 (3-36), SMARCB1 (2,4,5,9), 
+SMO (3,5-6,9,11), SRC (14), STAG2 (3-34), STK11 (1-9), SUFU (1-12), TERT (1), 
+TP53 (1-11), TP63 (1-14), TSC1 (3-23), TSC2 (2-42), TSHR (10), VHL (1-3). 
+
+The CNV gene targets covered by this test are as follows: ABL1, AKT1, ALK, APC, 
+ARID1A, ATM, ATRX, AURKA, BRAF, BRCA1, BRCA2, CAMTA1, CCNB1, CCND1, CCND2, 
+CCND3, CCNE1, CDK4, CDKN2A, CDK6, CIC, CDH1, CSF1R, DAXX, DDR2, DDX3X, EGFR, 
+ERBB2 (HER-2), ERBB3, ERBB4, FBXW7, FGF19, FGFR1, FGFR2, FGFR3, FLT3, FOXL2, 
+GLI2, GNA11, GNAQ, GNAS, HNF1A, HRAS, IDH1, JAK2, JAK3, KDR, KEAP1, KIT, KRAS, 
+MAP2K1, MAP3K1, MDM2, MDM4, MEN1, MET, MITF, MLH1, MSH6, MYC, MYCN, NF1, NF2, 
+NKX2-1, NOTCH1, NRAS, PDGFRA, PIK3CA, PIK3R1, PLAUR, POLE, PTCH1, PTEN, PTPN11, 
+RB1, RET, RHOA, RNF43, SDHB, SMAD2, SMAD4, SMARCA4, SMARCB1, SMO, SRC, STAG2, 
+STK11, SUFU, TERT, TP53, TP63, TSC1, TSC2, and VHL. 
+
+ANALYSIS PIPELINE VERSION: ÊCIDer v2.8.2 
+ANNOTATION VERSION: ÊVariant Effect Predictor v83 [8] 
+TUMOR MUTATIONAL BURDEN (TMB): ÊVersion 1.0 
+
+REFERENCES: 
+1. Zheng et al. Nat Med 2014;20(12):1479-84. [PMID: 25384085] 
+2. Novocraft Technologies (Selangor, Malaysia) 
+3. Cibulskis et al. Nat Biotechnol 2013;31(3):213-9. [PMID: 23396013] 
+4. Wilm et al. Nucleic Acids Res 2012; 40(22):11189-201. [PMID: 23066108] 
+5. McKenna et al. Genome Res 2010; 20(9):1297-303. [PMID: 20644199 ] 
+6. DePristo et al. Nat Genet 2011; 43(5):491-8. [PMID: 21478889] 
+7. Van der Auwera et al. Curr Protoc Bioinformatics 2013;43:11.10.1-33. [PMID: 
+25431634] 
+8. McLaren et al. Genome Biol. 2016 Jun 6;17(1):122. [PMID: 27268795] 
+9. Samstein et al., Nat Genet. 2019 Feb 5;51(2):202-206. [PMID: 30643254] 
+10. Goodman et al., Mol Cancer Ther. 2017 Nov 16(11):2598-2608. [PMID:28835386] 
+11. Goodman et al., Cancer Immunol Res. 2019 Oct;7(10):1570-1573. [PMID: 
+31405947] 
+12. Cristescy et al., Science 2018 Oct 12;362(6411). [PMID: 30309915] 
+
+
+This test was developed, and its performance characteristics were determined by 
+the Hospital Center for Integrated Diagnostics. It has not been cleared or approved 
+by the U.S. Food and Drug Administration. The FDA has determined that such 
+clearance or approval is not necessary. This test is used for clinical purposes. 
+Pursuant to the requirements of CLIA 88, this laboratory has established and 
+verified the test accuracy and precision. 
+
+**Electronically Signed Out By: ÊDoctor Doctor MD** 
+

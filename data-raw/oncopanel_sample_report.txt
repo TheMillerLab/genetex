@@ -1,0 +1,543 @@
+Results
+Profile Somatic Oncopanel (Order 123466787)
+Profile Somatic Oncopanel
+Order: 123466787
+Collected:  01/01/2021 00:00 Status:  Final result Visible to patient:  No (not released) Next appt:  04/01/2021 at 07:30 AM in Oncology
+
+Narrative
+
+CASE: BL-20-B123456789
+PATIENT: John Doe
+
+
+Man's Greatest Hospital
+Department of Pathology
+10 Downing Street, Boston, MA 02116
+
+CLIA License No.: 22D123456789
+Laboratory Director: Dr. Anonymous
+
+Physician: Ann Anonymous, MD
+Specimen Submitted:
+Procedure Date: 01/01/2021
+
+Pathologist:  Path Pathology, M.D.
+
+CLINICAL DATA:
+
+
+  Clinical Diagnosis:
+
+
+               ==== ONCOPANEL ====
+
+Accession numbers on blocks submitted - BS-20-A123456789-C1
+Original Pathologic Diagnosis - Merkel cell carcinoma
+Estimated percentage of neoplastic cells in submitted specimen - 70%
+
+RESULT:
+
+PASS
+
+There are 8660213 aligned, high-quality reads for this specimen with a mean of
+184 reads across all targeted exons and 77% of all exons having more than 31
+reads.
+
+Mutational Burden:
+
+Tumor Mutational Burden/Megabase: 62.427
+
+This is higher than 78% of all Cancer of Unknown Primary cancers sequenced by
+this version of OncoPanel
+
+This is higher than 77% of all Profile cases sequenced by this version of
+OncoPanel
+
+ACTIONABLE FINDINGS
+
+Mismatch Repair Status:
+
+Proficient (MMR-P / MSS)
+
+Mutations:
+
+Tier 1 variants:
+ARHGEF12 c.4418C>T (p.P1473L), exon 37 - in 42% of 266 reads###
+ARID1B c.3734C>T (p.P1312S), exon 16 - in 41% of 263 reads###
+ATM c.2873G>C (p.D766H), exon 17 - in 41% of 141 reads###
+BMPR1A c.203C>T (p.P68L), exon 4 - in 37% of 241 reads###
+BUB1B c.1142G>T (p.R381M), exon 7 - in 44% of 124 reads###
+CDH4 c.2006G>A (p.G667S), exon 12 - in 41% of 122 reads###
+CDH4 c.2006+1G>T () - in 41% of 121 reads###
+CDK12 c.807C>T (p.S210L), exon 1 - in 40% of 216 reads###
+CIITA c.1776G>A (p.W666*), exon 11 - in 41% of 203 reads###
+COL7A1 c.286T>A (p.D76E), exon 3 - in 47% of 227 reads###
+CSF3R c.486+6G>A () - in 62% of 142 reads###
+DIS3L2 c.686C>T (p.P176S), exon 6 - in 46% of 106 reads###
+DNMT3A c.1330G>A (p.E444K), exon 11 - in 40% of 230 reads###
+DOCK8 c.627-1C>T () - in 28% of 118 reads###
+ERBB4 c.3013C>T (p.P1026S), exon 26 - in 37% of 208 reads###
+ERCC3 c.1746-2A>T () - in 47% of 138 reads###
+ERG c.1062_1063delCCinsTT (p.P361L), exon 12 - in 44% of 278 reads###
+EXT1 c.1778G>A (p.D600N), exon 7 - in 44% of 221 reads###
+FANCD2 c.2646C>T (p.S882F), exon 28 - in 46% of 128 reads###
+FANCM c.3118C>T (p.P1060S), exon 14 - in 44% of 112 reads###
+FAT1 c.7167T>G (p.L2686R), exon 10 - in 41% of 366 reads###
+FGFR1 c.146-1G>A () - in 44% of 167 reads###
+FLT1 c.400C>T (p.P134S), exon 4 - in 82% of 108 reads###
+GALNT12 c.438T>A (p.N146K), exon 2 - in 33% of 316 reads###
+RB1 c.140G>A (p.V114I), exon 11 - in 69% of 42 reads##
+
+
+Tier 2 variants:
+ATM c.3161-1G>A () - in 60% of 136 reads###
+CIITA c.1776G>A (p.E666K), exon 11 - in 16% of 201 reads###
+COL7A1 c.1171C>T (p.R672C), exon 13 - in 12% of 280 reads###
+CSF3R c.2011-62G>A () - in 46% of 141 reads###
+DIS3L2 c.2171-23C>T () - in 46% of 128 reads###
+
+
+Structural Variants:
+
+Tier 1 variants: None identified.
+
+Tier 2 variants: None identified.
+
+Copy Number Variants:
+No actionable copy number variants identified
+
+ADDITIONAL FINDINGS:
+
+Investigational Mutational Signatures (see methods):
+UVA signature was detected (see comment).
+
+Investigational Variants
+
+Mutations:
+
+Tier 3 variants:
+RB1 c.411-1G>A () - in 71% of 33 reads##
+TP53 c.457G>A (p.E317L), exon 9 - in 91% of 226 reads##
+
+Tier 4 variants:
+ARHGEF12 c.4474C>T (p.P1493L), exon 79 - in 42% of 265 reads###
+ARID1B c.7974C>T (p.P1712S), exon 16 - in 47% of 267 reads###
+ATM c.2497G>C (p.D965H), exon 19 - in 41% of 141 reads###
+ATM c.7154-7C>T () - in 50% of 176 reads###
+BUB1B c.1142G>T (p.R741M), exon 9 - in 44% of 124 reads###
+CDH4 c.2005C>T (p.G669S), exon 12 - in 47% of 122 reads###
+CDH4 c.2005+1G>T () - in 47% of 121 reads###
+CIITA c.1995C>T (p.W665*), exon 11 - in 47% of 207 reads###
+COL7A1 c.245T>A (p.D95E), exon 7 - in 49% of 227 reads###
+CSF3R c.2041-62G>A () - in 46% of 141 reads###
+DIS3L2 c.2497-27C>T () - in 46% of 124 reads###
+DOCK8 c.529-7G>A () - in 24% of 114 reads###
+EGFR c.294C>T (p.P100S), exon 7 - in 45% of 244 reads###
+EGFR c.2245G>A (p.E749K), exon 19 - in 51% of 129 reads###
+ERBB4 c.7077C>T (p.P1025S), exon 25 - in 79% of 204 reads###
+ERCC3 c.1946-2A>T () - in 47% of 134 reads###
+ERCC6 c.7626C>A (p.S1209Y), exon 14 - in 44% of 744 reads###
+EXT1 c.1794G>A (p.D600N), exon 9 - in 44% of 227 reads###
+FANCD2 c.2645C>T (p.S442F), exon 24 - in 45% of 128 reads###
+FANCM c.7178C>T (p.P1060S), exon 14 - in 44% of 172 reads###
+FAT1 c.7757T>G (p.L2586R), exon 10 - in 47% of 765 reads###
+FAT1 c.173G>A (p.E45K), exon 2 - in 42% of 757 reads###
+FGFR1 c.746-1G>A () - in 44% of 169 reads###
+FLT1 c.400G>A (p.P174S), exon 4 - in 82% of 104 reads###
+GALNT12 c.474T>A (p.N146K), exon 2 - in 77% of 716 reads###
+GATA6 c.1428+6C>T () - in 45% of 204 reads###
+GLI1 c.7041C>T (p.P1014L), exon 12 - in 44% of 241 reads###
+GNAS c.2022_2027delGGinsAA (p.D675N), exon 1 - in 47% of 91 reads###
+H19 c.1477G>A (), exon 2 - in 47% of 184 reads###
+
+HELQ c.2191-4G>A () - in 49% of 45 reads###
+HNF1A c.1146C>T (p.L796F), exon 6 - in 41% of 165 reads###
+KAT6A c.557C>T (p.S146F), exon 2 - in 47% of 249 reads###
+KDM5A c.7167C>T (p.R1056Q), exon 21 - in 45% of 712 reads###
+KEAP1 c.1679G>C (p.V547L), exon 5 - in 46% of 196 reads###
+KLF4 c.352G>A (p.E114K), exon 7 - in 70% of 275 reads###
+KMT2D c.7997G>A (p.Q2665*), exon 31 - in 43% of 272 reads###
+MGA c.2455G>A (p.R419C), exon 8 - in 41% of 178 reads###
+MYB c.1077G>A (p.S746F), exon 9 - in 47% of 725 reads###
+NEIL3 c.74C>T (p.T25I), exon 1 - in 50% of 84 reads###
+NF1 c.1499T>A (p.I500N), exon 17 - in 77% of 96 reads###
+NOTCH1 c.5704C>T (p.P1770S), exon 24 - in 71% of 271 reads###
+NOTCH1 c.6247delC (p.R2095Afs*16), exon 74 - in 54% of 771 reads###
+NTRK3 c.1586-78648G>A () - in 79% of 124 reads###
+NUP214 c.2476+4C>T () - in 45% of 75 reads###
+PDGFRA c.1765-8C>T () - in 45% of 244 reads###
+PDGFRB c.1124-4G>A () - in 76% of 194 reads###
+PMS1 c.716-7C>T () - in 47% of 125 reads###
+PPARG c.65C>G (p.S22C), exon 1 - in 44% of 260 reads###
+PTCH1 c.7744C>T (p.P1262S), exon 22 - in 59% of 127 reads###
+PTK2B c.1297G>A (p.E477K), exon 20 - in 79% of 711 reads###
+PTPN11 c.1682G>A (p.P561L), exon 14 - in 40% of 185 reads###
+RAF1 c.1194-7C>T () - in 51% of 282 reads###
+RELA c.56_57delCCinsTT (p.P19L), exon 7 - in 41% of 148 reads###
+RET c.2192G>A (p.G771E), exon 12 - in 47% of 229 reads###
+ROS1 c.192G>A (p.W64*), exon 7 - in 27% of 55 reads###
+SLC34A2 c.1146G>A (p.M382I), exon 10 - in 44% of 149 reads###
+TCF3 c.827-5C>T () - in 54% of 44 reads###
+TET2 c.5747C>T (p.Q1787*), exon 11 - in 45% of 707 reads###
+TMPRSS2 c.470G>A (p.D144N), exon 5 - in 79% of 197 reads###
+TMPRSS2 c.40_41delCCinsTA (p.P27L), exon 3 - in 46% of 100 reads###
+TP53 c.454_455delCCinsTT (p.P152L), exon 5 - in 92% of 164 reads###
+TP53 c.254_215delCCinsTT (p.D144K), exon 2 - in 44% of 64 reads###
+TRAF7 c.1764G>A (p.E590K), exon 19 - in 74% of 271 reads###
+TSC2 c.1976_1977delCCinsTT (p.T659I), exon 19 - in 42% of 64 reads###
+TSC2 c.2615_2616delCCinsTT (p.S872F), exon 27 - in 40% of 251 reads###
+UIMC1 c.1750C>T (p.Q584*), exon 12 - in 40% of 282 reads###
+USP28 c.2417G>A (p.E805K), exon 20 - in 57% of 214 reads###
+VHL c.741-6C>T () - in 42% of 209 reads###
+WRN c.725-8C>T () - in 42% of 107 reads###
+ZNRF3 c.2348C>T (p.S463F), exon 7 - in 41% of 165 reads###
+
+Structural Variants:
+
+Tier 3 variants: None identified.
+
+Tier 4 variants: None identified.
+
+Copy Number Variants:
+Cytoband/Size      Type of Alteration Genes
+1p32.3-p34.1       Gain        CDKN2C, TAL1, MUTYH, UROD
+1q Arm level       Gain        MCL1, GBA, NTRK1, DDR2,
+PVRL4, SDHC,
+CDC73, PIK3C2B, UBE2T, H3F3A,
+EGLN1, EXO1, FH
+2q34           Loss        ERBB4
+2q35           Gain        BARD1, XRCC5
+4p Arm level       Loss        PHOX2B, RHOH, SLC34A2, FGFR3,
+WHSC1
+5 p Focal event      Amplification    SDHA (estimated 6 copies),
+TERT (estimated 6 copies)
+7q31.2-q36.2       Loss        MET, POT1, SMO, BRAF, PRSS1,
+EZH2, RHEB,
+XRCC2, PAXIP1
+9 Chromosomal level    Gain        PAX5, FANCG, RMRP, CDKN2A,
+CDKN2B, MTAP,
+CD274, JAK2, PDCD1LG2, DOCK8, GNAQ, NTRK2,
+FANCC, PTCH1, GALNT12, XPA, KLF4, TAL2, ENG,
+ABL1, TSC1, BRD3, NOTCH1
+11p11.2-p15.5       Loss        EXT2, WT1, CDKN1C,
+LMO1, H19,
+HRAS, KCNQ1
+12p13.32         Gain        CCND2
+12q24.12         Gain        SH2B3
+13q Arm level       Loss        CDK8, FLT1, BRCA2, RB1,
+DIS3, ERCC5,
+LIG4
+17q23.3          Gain        CD79B
+
+
+
+
+INTERPRETATION:
+
+
+MUTATIONAL SIGNATURES
+
+UVA Signature: This tumor exhibits an elevated mutational burden, including an
+increased number of C>T transitions, enriched at dipyrimidine (CC, CT, TC)
+sites. This pattern is characteristic of ultraviolet light-induced DNA damage.
+In this context, many of the variants identified are likely to be passenger
+mutations and not drivers of tumor biology. Clinical correlation is suggested.
+
+DNA VARIANTS
+
+RB1 c.921C>T (p.V314E); RB1 c.879-1G>A () - ##RB1 is a tumor suppressor gene.
+RB1 mutations are recurrent in Merkel cell carcinoma, and appear to be
+restricted to polyomavirus-negative cases (PMID:24406863, 26238782). This tumor
+has a dinucleotide substitution (GG>AA/CC>TT; in cis) located at the conserved
+5' end of the exon and splice acceptor site and is therefore predicted to lead
+to loss of function. The high allele frequency of these variants suggests copy
+neutral loss of heterozygosity and biallelic inactivation of RB1 in this tumor.
+Complete loss of RB1 predicts resistance to CDK4/CDK6 inhibition.
+
+### These variants may have a role in cancer biology, or may have shown
+potential future clinical application in in vitro studies, but as yet no
+clinical role for this mutation has been established as standard-of-carein the
+published medical literature.
+
+STRUCTURAL VARIANTS:
+
+No structural variants were detected in any of the genes tested. Note that
+many structural rearrangements are associated with DNA changes in introns, and
+the ability of this test to detect these rearrangements is limited to selected
+portions of selected introns of only 60 genes (see list below). Therefore, the
+absence of a rearrangement by this method is not a definitive result, and
+requires confirmation by an alternative method (e.g., FISH or karyotype) in the
+appropriate clinicopathologic context.
+
+COPY NUMBER ALTERATIONS (CNA):
+
+CNA analysis shows focal and segmental copy changes, including:
+
+Single copy deletion of RB1 at 13q14.2: RB1 is a tumor suppressor gene. Loss of
+function mutations and deletions in RB1 have been reported in Merkel cell
+carcinoma (PMID: 24406863), which is likely contributing to biallelic
+inactivation.
+
+
+
+
+
+TEST INFORMATION:
+
+This test has been validated and performed in a clinical laboratory that is
+certified by CLIA (CLIA certificate: 123456789ABC), under CLIA guidelines for
+clinical testing.
+
+This test was developed, and its performance characteristics determined by the
+Molecular Diagnostics Laboratory, Man's Greatest Hospital. It has not been
+cleared or approved by the U.S. Food and Drug Administration. The FDA has
+determined that such clearance or approval is not necessary.
+
+For detailed methodology and protocol, please contact the Center for Advanced
+Molecular Diagnostics (123-456-7890).
+
+INTERPRETIVE METHODS:
+
+Somatic genetic alterations in oncogenes and tumor-suppressor genes contribute
+to the pathogenesis and evolution of human cancers. These alterations can
+provide diagnostic, prognostic and predictive information and stratify cancers
+for targeted therapeutic information. We classify these alterations into five
+tiers using the following guidelines:
+
+Tier 1: The alteration has well-established published evidence confirming
+clinical utility in this tumor type, in at least one of the following contexts:
+predicting response to treatment with an FDA-approved therapy; strongly
+supportive in establishing a definitive diagnosis; assessing prognosis; or
+conferring an inherited increased risk of cancer to this patient and family.
+
+Tier 2: The alteration may have clinical utility in at least one of the
+following contexts: selection of an investigational therapy in clinical trials
+for this cancer type; limited evidence of prognostic association; supportive of
+a specific diagnosis; proven association of response to treatment with an
+FDA-approved therapy in a different type of cancer; or similar to a different
+mutation with a proven association with response to treatment with an
+FDA-approved therapy in this type of cancer.
+
+Tier 3: The alteration is of uncertain clinical utility, but may have a role as
+suggested by at least one of the following: demonstration of association with
+response to treatment in this cancer type in preclinical studies (e.g., in
+vitro studies or animal models); alteration in a biochemical pathway that has
+other known, therapeutically-targetable alterations; alteration in a highly
+conserved region of the protein predicted, in silico, to alter protein
+function; or selection of an investigational therapy for a different cancer
+type.
+
+Tier 4: The alteration is novel or its significance has not been studied in
+cancer. A subset of these alterations likely represents normal germline
+variants as the assay is not analyzed in conjunction with a matched normal from
+the same patient.
+
+Tier 5: The alteration has been determined to have no clinical utility, either
+for selecting therapy, assessing prognosis, establishing a diagnosis, or
+determining hereditary disease risk. These variants are not included in the
+report.
+
+Insufficient Coverage: If specified exon(s) have <50X coverage, that gene for
+that specific exon is considered to have insufficient coverage.
+
+Pertinent Negative: Specified exon(s) or codon(s) of interest for the given
+panel having sufficient coverage and no variants found.
+
+Copy Count Estimation: When the estimated number of copies for a CNV call is
+calculated as >= 6 copies, the report will include the number of copies instead
+of reporting high or low amplification. The copy estimate is the average number
+of copies in the sample, rounded to the nearest whole number, and is not
+adjusted for subclonal events. Importantly, the estimated copy number is a
+function of the subjective visual assessment of tumor purity(heterogeneity)
+made by a pathologist. As such, this copy number is an estimate, with an
+element of error. Copy number alterations are called at the gene level; genes
+that are not on our assay but are present in the cytoband should not have the
+same copy alteration inferred. The following formula is used for the
+calculation, where Noc = Number of Copies, AGCR = Average Gene CopyRatio, and P
+= Tumor Purity:NoC = (2 * (AGCR -1)/P ) + 2)
+
+Tumor mutational burden (TMB): TMB is calculated by determining the number of
+non-synonymous somatic mutations that occur per megabase of exonic sequence
+data across all genes on the panel. Measurement of TMB may be less precise in
+tumors with a very low tumor content and can potentially be affected by the
+presence of rare germline variants that are not removed by population allele
+frequency-based filtering. The TMB for a case is reported as a percentile in
+relation to all prior Profile clinical and research cohort samples sequenced on
+the current version of Oncopanel, as well as a percentile in relation to all
+tumors of that specific type. A tumor type-specific percentile is not provided
+for tumor types that have cumulatively been sequenced less than 10 times due to
+insufficient data for meaningful comparison.
+
+Mismatch repair (MMR): MMR pathway status is evaluated by determining the
+number of small insertion/deletion events that occur in homopolymer regions
+within exonic sequence data across all genes on the panel, using an extension
+of a method previously developed in our laboratory (J Mol Diagn.
+2017;19(1):84-91). Tumors with an elevated number of such events are classified
+as mismatch repair deficient (MSI-H), while tumors with a low burden of such
+events are classified as mismatch repair proficient (MSS). In some cases, it
+may not be possible to make a definitive determination about MMR pathway
+status. This may be due multiple factors, including low tumor content,
+suboptimal sequence quality, and the presence of another mutational signature.
+For these indeterminate cases, orthogonal testing via immunohistochemistry for
+mismatch repair protein expression or microsatellite instability testing by PCR
+should be considered. For tumors with 16 or more mutations, additional
+mutational signature analysis is performed based upon the pattern of nucleotide
+substitutions. Mutational signatures that can be detected using this approach
+include those associated with DNA damage due to ultraviolet light (UVA)
+exposure, tobacco smoke exposure, prior treatment with alkylating agents
+(including temozolomide), impaired POLE DNA polymerase function, and APOBEC
+enzyme dysregulation. The OncoPanel mutational signature detection tool is
+based upon previously published signatures derived from whole exome sequencing
+data (Alexandrov et al. Nature 500:415-21 (2013)) and was refined by training
+on targeted exome sequencing data (Zehir et al. Nature Medicine 23, 703713
+(2017)). The reported mutational patterns reflect those observed in vitro
+following exposure to relevant mutagens. The presence of these signatures, as
+detected by the OncoPanel mutational signature tool, was further validated
+against clinicopathologic features in 738 OncoPanel samples including (1)
+origin at a sun-exposed site, (2) smoking history, (3) prior treatment with
+temozolomide, (4) concurrent POLE hotspot mutation, or (5) MMR deficiency as
+detected by OncoPanel. Mutational signature sensitivity ranges from 42 to 82%
+and specificity from 80 to > 99% relative to matched clinical features.
+However, extensive functional analysis has not been performed for validation
+and, therefore, these signatures should be interpreted as observed patterns
+consistent with the appropriate pathologic mechanism, but not definitive
+assertions. Failure to detect a mutational signature despite a relevant
+clinical context may result from low numbers of mutations identified by this
+targeted assay, low tumor content, and/or alternative mechanisms of
+tumorigenesis. If the reported mechanism is unexpected (i.e., a UV-signature in
+tumor arising at a visceral site), an appropriate clinical correlate should be
+identified before initiating a change in management.
+
+
+LABORATORY METHODS:
+
+OncoPanel is a cancer genomic assay to detect somatic mutations, copy number
+variations and structural variants in tumor DNA extracted from fresh, frozen or
+formalin-fixed paraffin-embedded samples. The OncoPanel assay surveys exonic
+DNA sequences of 447 cancer genes and 191 regions across 60 genes for
+rearrangement detection. DNA is isolated from tissue containing at least 20%
+tumor nuclei and analyzed by massively parallel sequencing using a
+solution-phase Agilent SureSelect hybrid capture kit and an Illumina HiSeq 2500
+sequencer. While the genes targeted by OncoPanel remain unchanged, additional
+hybridization probes have been included to improve structural variant
+detection.
+
+The 447 genes are:
+ABCB11,ABL1,ACVR1,AKT1,AKT2,AKT3,ALK,APC,AR,ARAF,ARHGAP35,ARHGEF12,ARID1A,ARID1
+B,ARID2,ASXL1,ATM,ATR,ATRX,AURKA,AURKB,AXIN2,AXL,B2M,BABAM1,BAP1,BARD1,BCL11B,B
+CL2,BCL2L1,BCL2L12,BCL6,BCOR,BCORL1,BLM,BMPR1A,BRAF,BRCA1,BRCA2,BRCC3,BRD3,BRD4
+,BRE,BRIP1,BUB1B,C17ORF70,C19ORF40,C1ORF86,CALR,CARD11,CASP8,CBFA2T3,CBFB,CBL,C
+BLB,CCND1,CCND2,CCND3,CCNE1,CD274,CD79B,CDC73,CDH1,CDH4,CDK12,CDK4,CDK6,CDK8,CD
+KN1A,CDKN1B,CDKN1C,CDKN2A,CDKN2B,CDKN2C,CEBPA,CHEK1,CHEK2,CIC,CIITA,COL7A1,CREB
+BP,CRKL,CRLF2,CRTC1,CSF3R,CTCF,CTLA4,CTNNA1,CTNNB1,CUX1,CXCR4,CYLD,DAXX,DCLRE1C
+,DDB1,DDB2,DDR2,DICER1,DIS3,DIS3L2,DKC1,DMC1,DNMT3A,DOCK8,EGFR,EGLN1,ELANE,EME1
+,ENG,EP300,EPCAM,ERBB2,ERBB3,ERBB4,ERCC1,ERCC2,ERCC3,ERCC4,ERCC5,ERCC6,ERG,ESR1
+,ETV1,ETV4,ETV5,ETV6,EWSR1,EXO1,EXT1,EXT2,EZH2,FAH,FAM175A,FAM46C,FAN1,FANCA,FA
+NCB,FANCC,FANCD2,FANCE,FANCF,FANCG,FANCI,FANCL,FANCM,FAS,FAT1,FBXW7,FGFR1,FGFR2
+,FGFR3,FGFR4,FH,FLCN,FLT1,FLT3,FLT4,FOXA1,FOXL2,FUS,GALNT12,GATA2,GATA3,GATA4,G
+ATA6,GBA,GEN1,GLI1,GLI2,GNA11,GNAQ,GNAS,GPC3,GREM1,H19,H3F3A,H3F3B,HABP2,HELQ,H
+FE,HIST1H3B,HIST1H3C,HMBS,HNF1A,HOXB13,HRAS,ID3,ID4,IDH1,IDH2,IGF1R,IGF2,IKZF1,
+IL7R,ITK,JAK1,JAK2,JAK3,JAZF1,KAT6A,KAT6B,KCNQ1,KDM5A,KDM5C,KDM6A,KDR,KEAP1,KIF
+1B,KIT,KLF2,KLF4,KLLN,KMT2A,KMT2D,KRAS,LIG4,LMO1,LMO2,MAF,MAFB,MAP2K1,MAP2K2,MA
+P2K4,MAP3K1,MAPK1,MAX,MBD4,MCL1,MCM8,MDM2,MDM4,MECOM,MED12,MEF2B,MEN1,MET,MGA,M
+ITF,MLH1,MLH3,MPL,MRE11A,MSH2,MSH6,MTA1,MTAP,MTOR,MUS81,MUTYH,MYB,MYBL1,MYC,MYC
+L1,MYCN,MYD88,NBN,NEIL1,NEIL2,NEIL3,NF1,NF2,NFE2L2,NFKBIA,NFKBIE,NFKBIZ,NKX2.1,
+NKX3.1,NOTCH1,NOTCH2,NOTCH3,NPM1,NR0B1,NRAS,NRG1,NSD1,NT5C2,NTHL1,NTRK1,NTRK2,N
+TRK3,OGG1,PALB2,PARK2,PAX5,PAXIP1,PBRM1,PDCD1LG2,PDGFRA,PDGFRB,PHF6,PHOX2B,PIK3
+C2B,PIK3CA,PIK3R1,PIM1,PML,PMS1,PMS2,PNKP,POLB,POLD1,POLE,POLH,POLQ,POT1,PPARG,
+PPM1D,PPP2R1A,PRDM1,PRF1,PRKAR1A,PRKCI,PRKDC,PRSS1,PTCH1,PTEN,PTK2B,PTPN11,PTPN
+14,PVRL4,QKI,RAC1,RAD21,RAD50,RAD51,RAD51C,RAD51D,RAD52,RAD54B,RAF1,RARA,RASA1,
+RB1,RBBP8,RBM10,RECQL4,REL,RELA,RET,RHBDF2,RHEB,RHOA,RHOH,RHOT1,RICTOR,RIF1,RIN
+T1,RIT1,RMRP,RNF43,RNF8,ROS1,RPA1,RPTOR,RSPO2,RSPO3,RUNX1,RUNX1T1,SBDS,SDHA,SDH
+AF2,SDHB,SDHC,SDHD,SERPINA1,SETBP1,SETD2,SF3B1,SH2B3,SH2D1A,SLC25A13,SLC34A2,SL
+X1A,SLX1B,SLX4,SMAD2,SMAD4,SMARCA4,SMARCB1,SMARCE1,SMC3,SMO,SOCS1,SOS1,SOX2,SOX
+9,SPOP,SRSF2,SRY,SS18,STAG2,STAT3,STAT6,STK11,SUFU,SUZ12,TAL1,TAL2,TAZ,TCEB1,TC
+F3,TCF7L2,TDG,TERC,TERT,TET1,TET2,TFE3,TLX3,TMEM127,TMPRSS2,TNFAIP3,TOPBP1,TP53
+,TP53BP1,TRAF3,TRAF7,TRIM37,TSC1,TSC2,TSHR,U2AF1,UBE2T,UIMC1,UROD,USP28,USP8,VE
+GFA,VHL,WAS,WHSC1,WHSC1L1,WRN,WT1,XPA,XPC,XPO1,XRCC1,XRCC2,XRCC3,XRCC4,XRCC5,XR
+CC6,YAP1,ZNF217,ZNRF3,ZRSR2
+
+191 regions across the following 60 genes are targeted for rearrangement
+detection:
+ABL1,ALK,BCL6,BIRC3,BRAF,CBFB,CIC,CIITA,CRTC1,CRTC3,EGFR,ERG,ESR1,ETV4,ETV5,ETV
+6,EWSR1,FGFR1,FGFR2,FGFR3,FIP1L1,FOXO1,FUS,JAK2,KMT2A,MET,MYB,MYBL1,NAB2,NCOA2,
+NPM1,NR4A3,NRG1,NTRK1,NTRK2,NTRK3,NUP214,NUTM1,PDGFB,PDGFRA,PDGFRB,PHF1,PML,PPA
+RG,RAF1,RARA,RELA,RET,ROS1,RSPO2,RSPO3,RUNX1,SLC34A2,SS18,SUZ12,TMPRSS2,TP53,WW
+TR1,YAP1,YWHAE
+
+This test has been performed under an institutional research protocol (17-000)
+but has been validated and performed in a clinical laboratory that is certified
+by CLIA (CLIA certificate: 1236456DD), under CLIA guidelines for clinical
+testing. Accordingly, the Man's Greatest Hospital Institutional Review
+Board has authorized the release of these test results, performed under this
+research protocol, into the patient's electronic medical record, so that they
+may be used for clinical management decisions, including determining
+eligibility for clinical trials.
+
+
+REFERENCES:Garcia EP, Minkovsky A, Jia Y, Ducar MD, Shivdasani P, Gong X, Ligon
+AH, Sholl LM, Kuo FC, MacConaill LE, Lindeman NI, Dong F. Validation of
+OncoPanel: A Targeted Next-Generation Sequencing Assay for the Detection of
+Somatic Variants in Cancer. Arch Pathol Lab Med. 2017 Jun;141(6):751-758.
+PMID: 28557599
+
+Nowak JA, Yurgelun MB, Bruce JL, Rojas-Rudilla V, Hall DL, Shivdasani P, Garcia
+EP, Agoston AT, Srivastava A, Ogino S, Kuo FC, Lindeman NI, Dong F. Detection
+of mismatch repair deficiency and microsatellite instability in colorectal
+adenocarcinoma by targeted next-generation sequencing. J Mol Diagn 2017;
+19:84-91. PMID: 27863258
+
+Sholl LM, Do K, Shivdasani P, Cerami E, Dubuc AM, Kuo FC, Garcia EP, Jia Y,
+Davineni P, Abo RP, Pugh TJ, van Hummelen P, Thorner AR, Ducar M, Berger AH,
+Nishino M, Janeway KA, Church A, Harris M, Ritterhouse LL, Campbell JD,
+Rojas-Rudilla V, Ligon AH, Ramkissoon S, Cleary JM, Matulonis U, Oxnard GR,
+Chao R, Tassell V, Christensen J, Hahn WC, Kantoff PW, Kwiatkowski DJ, Johnson
+BE, Meyerson M, Garraway LA, Shapiro GI, Rollins BJ, Lindeman NI, MacConaill
+LE. Institutional implementation of clinical tumor profiling on an unselected
+cancer population. JCI Insight 2016; 1:e87062. PMID: 27882345
+
+BreaKmer: detection of structural variation in targeted massively parallel
+sequencing data using kmers. Abo RP, Ducar M, GarciaEP, Thorner AR, Rojas -
+Rudilla V, Lin L, Sholl LM, Hahn WC, Meyerson M, Lindeman NI, Van Hummelen P,
+MacConaill LE. Nucleic Acids Res. 2015 Feb 18;43(3):e19. PMID: 25428359.
+
+Wagle et al. High-throughput detection of actionable genomic alterations in
+clinical tumor samples by targeted, massively parallel sequencing. Cancer
+Discov. 2012 Jan;2(1):82-93.Erstad DJ, Cusack JC Mutational analysis of merkel
+cell carcinoma. Cancers (Basel) (2014) 6:2116
+
+By his/her signature below, the senior physician certifies that he/she
+personally reviewed all the laboratory data of the described specimen(s) and
+rendered or confirmed the diagnosis(es) related thereto.
+
+
+
+Final Diagnosis by Path Pathology M.D., Electronically signed on January 12, 2021 at 03:22:33PM
+
+Specimen Collected: 01/01/21 00:00
+Last Resulted: 01/11/21 17:45
+
+  Order Details 
+  View Encounter 
+  Variant Details 
+  Lab and Collection Details 
+  Routing 
+  Result History 
+
+
+
+Print Individual Lab Result
+
+Profile Somatic Oncopanel (Order #123456789) on 01/01/21
+
+
+
+
+
+
+
+
+
+
+
+
