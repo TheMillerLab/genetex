@@ -23,7 +23,7 @@ gene.variants.isolate.snapshot <- function(data = dplyr::tibble(Results = clipbo
   ##########################################################################################################################
   genes_boundary_df <- genetex::genes_boundary_regex() # this is a df of unique genes names concatenated with "|"
   genes_boundary_regex <- genes_boundary_df$genes # this is a character string of the genes for our regex
-  nuc_regex <- "[ACTG]>[ACTG]|del[ACTG]" # This regex should identify those rows that have nucleotide changes
+  nuc_regex <- "[ACTG]>[ACTG]|del[ACTG]|([ACTG]{1,}[0-9]{1,}_[0-9]{1,}[ACTG])" # This regex should identify those rows that have nucleotide changes
   aa_regex <- "(\\b([A-Z][0-9]{1,}(([A-Z])|(_[A-Z][1-9]{1,}del)|(fs\\*[1-9]{1,})|(\\*)|(fs)|(del)))|(p\\.[A-Z]))|([0-9]ins[A-Z])"
   genes_boundary_nuc_aa_regex <- paste(genes_boundary_regex, nuc_regex, aa_regex, sep = "|") # concatenate several regexs
 
@@ -59,9 +59,9 @@ gene.variants.isolate.snapshot <- function(data = dplyr::tibble(Results = clipbo
                                                  pattern = stringr::regex(genes_boundary_regex)),
                   group = base::cumsum(keywords))
   # find those groups that are duplicated, but do not have more than 3 as SNaPshot reports should only have a
-  ## Gene Name, Amino Acid variant and a Nucleotide variant. Groups with only one component or more than 3
+  ## Gene Name, Amino Acid variant and a Nucleotide variant. Groups with only one component or more than 5
   ### would be erroneous rows from the report
-  dt.4 <- dt.3 %>% dplyr::count(group) %>% dplyr::filter(n >= 2 & n<= 3)
+  dt.4 <- dt.3 %>% dplyr::count(group) %>% dplyr::filter(n >= 2 & n<= 5)
   # filter only those rows from dt.3 that are in the new dt.4
   dt.5 <- dt.3 %>% dplyr::filter(dt.3$group %in% dt.4$group)
   # drop ; or . or , at the end of the string

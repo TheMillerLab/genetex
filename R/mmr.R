@@ -3,7 +3,7 @@
 #' `mmr()` provides NLP tools to text mine mismatch repair status from genomic reports and transforms it to structured data for import into REDCap
 #' @description
 #' `genetex_to_redcap()` provides natural language processing tools to abstract data from a variety of genomic reports and import them to REDCap
-#' @param data The data frame of the genomic report of interest. This can be copied to the Clipboard from the EHR report by "selecting all" and then "copy". That is the default. If you don't use the clipboard function, you can use a data frame of the text file. The single column data frame should be labeled "Results". Required.
+#' @param data The data frame of the genomic report of interest. This can be copied to the Clipboard from the EHR report by selecting the relevant text and then "copy". That is the default. If you don't use the clipboard function, you can use a data frame of the text file. The single column data frame should be labeled "Results". Required.
 #'
 #' @return a data frame with two columns: variables (the redcap variable names) and results (the data to be imported in to redcap)
 #' @export

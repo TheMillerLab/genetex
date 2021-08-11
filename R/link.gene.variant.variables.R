@@ -17,7 +17,7 @@ link.gene.variant.variables <- function(data){
   ##########################################################################################################################
   genes_boundary_df <- genetex::genes_boundary_regex() # this is a df of unique genes names concatenated with "|"
   genes_boundary_regex <- genes_boundary_df$genes # this is a character string of the genes for our regex
-  nuc_regex <- "[ACTG]>[ACTG]|del[ACTG]" # This regex should identify those rows that have nucleotide changes
+  nuc_regex <- "[ACTG]>[ACTG]|del[ACTG]|([ACTG]{1,}[0-9]{1,}_[0-9]{1,}[ACTG])" # This regex should identify those rows that have nucleotide changes
   aa_regex <- "(\\b([A-Z][0-9]{1,}(([A-Z])|(_[A-Z][1-9]{1,}del)|(fs\\*[1-9]{1,})|(\\*)|(fs)|(del)))|(p\\.[A-Z]))|([0-9]ins[A-Z])|\\b[A-Z][a-z]{1,3}[0-9]{1,}[A-Z][a-z]{1,3}"
   cfdna_regex <- "\\b[0-9]{1,2}\\.[0-9]{1,2}%"
 

@@ -20,7 +20,7 @@ gene.variants.guardant <- function(data = dplyr::tibble(Results = clipboard())){
   ## call the genes_regex function to create a regex of all the gene names
   genes_boundary_df <- genetex::genes_boundary_regex() # this is a df of unique genes names concatenated with "|"
   genes_boundary_regex <- genes_boundary_df$genes # this is a character string of the genes for our regex
-  nuc_regex <- "[ACTG]>[ACTG]|del[ACTG]" # This regex should identify those rows that have nucleotide changes
+  nuc_regex <- "[ACTG]>[ACTG]|del[ACTG]|promoter" # This regex should identify those rows that have nucleotide changes
   aa_regex <- "(\\b([A-Z][0-9]{1,}(([A-Z])|(_[A-Z][1-9]{1,}del)|(fs\\*[1-9]{1,})|(\\*)|(fs)|(del)))|(p\\.[A-Z]))|([0-9]ins[A-Z])"
   # This regex will detect all the possible AA alterations with single initials
   cfdna_regex <- "\\b[0-9]{1,2}\\.[0-9]{1,2}%"
@@ -53,7 +53,7 @@ gene.variants.guardant <- function(data = dplyr::tibble(Results = clipboard())){
   # Filter only those rows with the above genes_nuc_aa_cfdna_regex
   dt.2 <- dt.1 %>%
     dplyr::filter(stringr::str_detect(string = dt.1$Results,
-                                      pattern = stringr::regex(genes_nuc_aa_cfdna_regex)))
+                                      pattern = stringr::regex(genes_nuc_aa_cfdna_regex, ignore_case = TRUE)))
 
   # Create a grouping system based on gene names
   dt.3 <- dt.2 %>%
@@ -91,7 +91,7 @@ gene.variants.guardant <- function(data = dplyr::tibble(Results = clipboard())){
                                                                 pattern = stringr::regex(genes_boundary_regex)),
                                      yes = "variant_gene",
                                      no = ifelse(test = stringr::str_detect(string = dt.8$merge,
-                                                                            pattern = stringr::regex(nuc_regex)),
+                                                                            pattern = stringr::regex(nuc_regex, ignore_case = TRUE)),
                                                  yes = "variant_nucleotide",
                                                  no = ifelse(test = stringr::str_detect(string = dt.8$merge,
                                                                                         pattern = stringr::regex(aa_regex)),
@@ -114,15 +114,27 @@ gene.variants.guardant <- function(data = dplyr::tibble(Results = clipboard())){
   dt.11 <- dt.10 %>% mutate(variables = paste(var, order, sep = "_"))
   dt.12 <- dt.11 %>% rename(results = merge) %>%  select(variables, results)
 
+  # Account for "Promoter SNV"
+  ## The guardant report reports Promoter SNVs. Let's account for this and replace "promoter" with "Promoter SNV".
+
+  dt.12.promoter_snv <- dt.12
+  dt.12.promoter_snv$results <- stringr::str_replace(string = dt.12.promoter_snv$results,
+                                                     pattern = "Promoter",
+                                                     replacement = "Promoter SNV")
+  ### Only replace if the exact string "Promoter SNV" is found in the initial report (since there may be other
+  #### promoter variations and we don't want to replace those, only Promoter SNV)
+  dt.13 <- if(any(stringr::str_detect(string = dt$Results, pattern = "Promoter SNV"))) dt.12.promoter_snv else dt.12
+
+
   # Add variants_number
-  variants.number.1 <- stringr::str_detect(string = dt.12$variables, pattern = "variant_gene_[0-9]")
+  variants.number.1 <- stringr::str_detect(string = dt.13$variables, pattern = "variant_gene_[0-9]")
   variants.number.2 <- sum(variants.number.1)
-  variants.number <- if(is.na(dt.12[1,2])) 0 else variants.number.2
+  variants.number <- if(is.na(dt.13[1,2])) 0 else variants.number.2
   variants.number.df <- data.frame(variables = "variant_number",
                               results = variants.number)
 
   # combine dfs
-  gene_variants <- rbind(dt.12, variants.number.df)
+  gene_variants <- rbind(dt.13, variants.number.df)
   gene_variants$results <- base::as.character(gene_variants$results)
 
   return(gene_variants)
