@@ -10,7 +10,6 @@
 #' @param date_collected A string of the date the genomic sample was collected in YYYY-MM-DD format (e.g. "2020-12-31). Optional.
 #' @param redcap_uri A string of the url for the REDCap system you are working with.
 #' @param redcap_api_token A user-specific alphanumeric string that serves as the password for the REDCap project. The default is blank, which means the data will not be sent to REDCap. Optional.
-#' @param import_tool a data frame of the REDCap import tool. The default is a csv file stored in the data-raw file. This should be in "long format" and the column header/variable name should be "variables". Required
 #' @return A data frame that can be imported into the Genomics Instrument in REDCap (https://www.themillerlab.io/post/optimizing_rwd_collection-genomics_instrument/)
 #' @export
 #' @examples
@@ -32,8 +31,7 @@ genetex_to_redcap <- function(
   genomics_tissue_type = "",
   date_collected = "",
   redcap_uri,
-  redcap_api_token = "",
-  import_tool = readr::read_csv("data-raw/genomics_import_tool.csv")
+  redcap_api_token = ""
   )
   {
 
@@ -101,6 +99,12 @@ genetex_to_redcap <- function(
     "gen_qcdash___dac", "1"
   )
   add_info$results <- as.character(add_info$results)
+
+  ##########################################################################################################################
+  # Load Import Tool (of note, if this changes, one needs to reload the new file into the "data" file)
+  ##########################################################################################################################
+  import_tool <- genetex::genomics_import_tool
+
   ##########################################################################################################################
   # Build genetex-to-redcap ("gtr") Data Frames
   ##########################################################################################################################
