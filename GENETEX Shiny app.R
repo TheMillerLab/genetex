@@ -88,10 +88,11 @@ server <- function(input, output, session) {
  ############################  Reactives for the arguments of the function ################################
  # Data Argument
  data.df <- eventReactive(input$run, {
-   data <- readr::read_delim(input$data, delim = "\n")
+   data <- readr::read_delim(input$data, delim = ".")
    names(data)[1] <-  "Results"
    data <- data.frame(data)
  })
+
 
 # Create a reactive for the genetex_to_redcap function
   gtr <- eventReactive(input$run, {
