@@ -31,26 +31,44 @@ gene.variants.isolate.oncopanel <- function(data = dplyr::tibble(Results = clipb
   ##########################################################################################################################
   # Isolate Gene Variants
   ##########################################################################################################################
-  # We need to eliminate much of this report in order to mine only those gene alterations relevant to each subject
-  ## So we will use the word "cytoband/size" as a divider and take only those rows that are above it
-  keyword <- "cytoband/size"
-  dt.1a <- dt %>%
-    mutate(divider = stringr::str_detect(string = dt$Results,
-                                         pattern = stringr::regex(keyword, ignore_case = TRUE)),
-           group = cumsum(divider)) %>%
-    filter(group == 0)
-
   # tokenize the vector with space as the delimiter
-  dt.1 <- splitstackshape::cSplit(
-    indt = dt.1a,
+  dt.1a <- splitstackshape::cSplit(
+    indt = dt,
     splitCols = "Results",
     sep = " ",
     direction = "long"
   )
 
+  # We need to eliminate much of this report in order to mine only those gene alterations relevant to each subject
+  ## So we will use the word "cytoband/size" as a divider and take only those rows that are above it
+  keyword <- "cytoband/size"
+  dt.1b <- dt.1a %>%
+    mutate(divider = stringr::str_detect(string = dt.1a$Results,
+                                         pattern = stringr::regex(keyword, ignore_case = TRUE)),
+           group = cumsum(divider)) %>%
+    filter(group == 0)
+
+
+  # Eliminate erroneous strings, such as reads###
+  dt.1c <- dt.1b
+  dt.1c$Results <- stringr::str_replace_all(
+    string = dt.1c$Results,
+    pattern = "reads###",
+    replacement = " "
+  )
+
+  dt.1c$Results <- stringr::str_replace_all(
+    string = dt.1c$Results,
+    pattern = "reads##",
+    replacement = " "
+  )
+
+  dt.1c$Results <- stringr::str_trim(dt.1c$Results)
+
+
   # Filter only those rows with the above genes_nuc_aa_regex
-  dt.2 <- dt.1 %>%
-    dplyr::filter(stringr::str_detect(string = dt.1$Results,
+  dt.2 <- dt.1c %>%
+    dplyr::filter(stringr::str_detect(string = dt.1c$Results,
                                       pattern = stringr::regex(genes_boundary_nuc_aa_regex)))
 
   # Create a grouping system based on gene names
@@ -73,10 +91,23 @@ gene.variants.isolate.oncopanel <- function(data = dplyr::tibble(Results = clipb
   # remove the prefix before AA or NT
   dt.5a <- dt.5
   dt.5a$Results <- stringr::str_replace(string = dt.5a$Results, pattern = "^[pc]\\.", replacement = "")
+
+  # Replace the string "variants:" that is in a few rows
+  dt.5b <- dt.5a
+  dt.5b$Results <- stringr::str_replace(
+    string = dt.5b$Results,
+    pattern = "variants:",
+    replacement = ""
+  )
+
+  dt.5b$Results <- stringr::str_trim(dt.5b$Results)
+
   # transpose wide via paste0 so we can eliminate duplicates
-  dt.6 <- dt.5a %>% dplyr::group_by(group) %>% dplyr::mutate(merge = base::paste0(Results, collapse = " ")) %>% ungroup()
+  dt.6 <- dt.5b %>% dplyr::group_by(group) %>% dplyr::mutate(merge = base::paste0(Results, collapse = " ")) %>% ungroup()
+
   # slice to eliminate duplicates
   dt.7 <- dt.6 %>% dplyr::group_by(merge) %>% dplyr::slice_head()
+
   # Order by group to maintain the order in the report
   dt.8 <- dt.7 %>% dplyr::arrange(group)
   dt.9 <- dt.8 %>% select(merge) %>% rename(genes_variants = merge)

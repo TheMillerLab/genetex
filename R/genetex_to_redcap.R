@@ -23,7 +23,7 @@
 #'   lesion_tag = "Right Arm Primary",
 #'   )
 genetex_to_redcap <- function(
-  data = dplyr::tibble(Results = readr::clipboard()), # allow clipboard to bring in data as default
+  data = dplyr::tibble(readr::read_delim(file = readr::clipboard(), delim = ".", col_names = FALSE)), # allow clipboard to bring in data as default
   record_id,
   instrument_instance,
   platform,
@@ -32,8 +32,13 @@ genetex_to_redcap <- function(
   date_collected = "",
   redcap_uri,
   redcap_api_token = ""
-  )
-  {
+)
+{
+
+  ##########################################################################################################################
+  # Rename the vector of data to "Results"
+  ##########################################################################################################################
+  colnames(data)[1] <- "Results"
 
   ##########################################################################################################################
   # Tumor Mutational Burden

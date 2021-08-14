@@ -8,7 +8,7 @@
 #' @return a data frame with two columns: variables (the redcap variable names) and results (the data to be imported in to redcap)
 #' @export
 #'
-mmr <- function(data = dplyr::tibble(Results = readr::clipboard())){
+mmr <- function(data = dplyr::tibble(readr::read_delim(file = readr::clipboard(), delim = ".", col_names = FALSE))){
 
   ##########################################################################################################################
   # load data

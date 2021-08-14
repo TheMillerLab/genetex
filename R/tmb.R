@@ -7,13 +7,14 @@
 #' @return a data frame with two columns: variables (the redcap variable names) and results (the data to be imported in to redcap)
 #' @export
 #'
-tmb <- function(data = dplyr::tibble(Results = readr::clipboard()),
+tmb <- function(data = dplyr::tibble(readr::read_delim(file = readr::clipboard(),delim = ".", col_names = FALSE)),
                 platform){
 
   ##########################################################################################################################
   # load data
   ##########################################################################################################################
   dt <- data
+  colnames(dt)[1] <- "Results"
 
   ##########################################################################################################################
   # Initial Filter for Tumor Mutational Burden

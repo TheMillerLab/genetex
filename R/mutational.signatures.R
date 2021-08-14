@@ -6,11 +6,14 @@
 #' @return a data frame with two columns: variables (the redcap variable names) and results (the data to be imported in to redcap)
 #' @export
 #'
-mutational.signatures <- function(data = dplyr::tibble(Results = readr::clipboard())){
+mutational.signatures <- function(data = dplyr::tibble(readr::read_delim(file = readr::clipboard(), delim = ".", col_names = FALSE))){
   ##########################################################################################################################
-  # load data
+  # load data and clean
   ##########################################################################################################################
   dt <- data
+  colnames(dt)[1] <- "Results"
+
+  dt <- dt %>% tidyr::drop_na()
 
   ##########################################################################################################################
   # Mutational Signatures
@@ -40,7 +43,7 @@ mutational.signatures <- function(data = dplyr::tibble(Results = readr::clipboar
   too_few_df <- data.frame(
     signature = "too_few",
     sum = if(too_few_sum >=1) 1 else 0
-  )
+    )
 
   ## Let's bind the various signature dfs into "signatures_df", which will be the df that we sum "sum from for the
   ### "mutation_signature_number" variable
@@ -70,6 +73,9 @@ mutational.signatures <- function(data = dplyr::tibble(Results = readr::clipboar
   #### we can start with the "Too-Few Mutations" entry
   mut_signature_df[3,1] <- if(too_few_sum >= 1) 99 else NA
   mut_signature_df$results <- base::as.character(mut_signature_df$results)
+
+  # Drop NA
+  mut_signature_df <- mut_signature_df %>% tidyr::drop_na()
 
   return(mut_signature_df)
 }
