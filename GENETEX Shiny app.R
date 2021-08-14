@@ -11,7 +11,7 @@ library(genetex)
 ##########################################################################################################################
 
 # Create Platform Dropdown
-platform <- c("MGH/SNaPshot","BWH/Oncopanel","Guardant 360","FoundationOne CDx","TEMPUS xT Gene Panel","MSK-IMPACT")
+platform <- c("MGH/SNaPshot","BWH/Oncopanel","Guardant 360","FoundationOne CDx")
 
 # Create Tissue-type platform
 genomics_tissue_type <- c("Primary Cutaneous Tumor",
