@@ -8,7 +8,7 @@ The goal of <font color = 'orange' ><b>GENETEX</b></font> (pronounced "genetics"
 
 We have also created a front-end Shiny application that uses the core functions of <font color = 'orange' ><b>GENETEX</b></font> on the server side of the app. The Shiny app of <font color = 'orange' ><b>GENETEX</b></font> allows for data to be entered in the browser to facilitate data capture. The package does not require the use of the Shiny app, but the app enhances the usability of the package.
 
-To facilitate the installation of this package and shiny application, we have created a **Video Demo**, that can be accessed **[here](https://www.dropbox.com/s/r062sp8m4cgq97v/GENETEX_video_demo.mov?dl=0)**
+To facilitate the installation of this package and shiny application, we have created a **Video Demo**, that can be accessed **[here](https://www.dropbox.com/s/eypsrerux0w9es0/GENETEX_video_demo.mov?dl=0)**
 
 
 <font color = 'orange' ><b>GENETEX</b></font> provides a set of verbs that help you import, text mine and process genomic data for clinical research:  
