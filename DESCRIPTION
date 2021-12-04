@@ -1,22 +1,22 @@
-Package: genetex
+Package: BodyMapR
 Type: Package
-Title: GENETEX is a Natural Language Processing pacakge for patient registries
+Title: BodyMapR
 Version: 0.1.0
 Authors@R:
-    c(person(given = "David", 
-             family = "Miller", 
-             email = "dmiller4@mgh.harvard.edu", 
-             role = c("aut", "cre"),
-             comment = c(ORCID = 0000-0001-9736-9119)),
+    c(
+    person(given = "David", 
+           family = "Miller", 
+           email = "dmiller4@mgh.harvard.edu", 
+           role = c("aut", "cre"),
+           comment = c(ORCID = 0000-0001-9736-9119)
+           ),
     person(given = "Sophia", 
            family = "Shalhout", 
-           role = c("aut")))
+           role = c("aut")
+           )
+           )
 Maintainer: David Michael Miller <dmiller4@mgh.harvard.edu>
-Description: GENETEX is a Natural Language Processing pacakge for patient registries. It's primary function 
-    is to provide a series of functions to augment data abstraction of genomic reports encountered in 
-    routine clinical practice. It provides a simplified workflow allowing users to copy relevant text and pdf 
-    files and run functions that either directly import data into REDCap or create a csv file that can later
-    be imported
+Description: BodyMapR is an shiny application that transposes structured data from REDCap® onto an anatomical map to yield an interactive data visualization.  
 License: MIT
 Encoding: UTF-8
 LazyData: true
@@ -27,7 +27,6 @@ Imports:
     tidyr,
     readr,
     stringr,
-    purrr,
-    REDCapR,
     magrittr
 RoxygenNote: 7.1.1
+
